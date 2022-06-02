@@ -1,3 +1,6 @@
+## Dear ImGui artifacts
+imgui.ini
+
 # CMake
 CMakeLists.txt.user
 CMakeCache.txt
