@@ -24,8 +24,7 @@ if(NOT EXISTS "${PROJECT_SOURCE_DIR}/external/glfw/CMakeLists.txt")
 endif()
 
 add_subdirectory(external/glfw)
-add_subdirectory(external/glad)
-add_subdirectory(external/imgui)
+add_subdirectory(external)
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC external/glfw/include
