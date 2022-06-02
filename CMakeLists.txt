@@ -25,18 +25,24 @@ endif()
 
 add_subdirectory(external/glfw)
 add_subdirectory(external/glad)
+add_subdirectory(external/imgui)
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC external/glfw/include
     PUBLIC external/glad/include
+    PUBLIC external/imgui
+    PUBLIC external/imgui/backends
 )
 
 target_link_directories(${PROJECT_NAME}
     PRIVATE external/glfw/src
     PRIVATE external/glad/src
+    PRIVATE external/imgui
+    PRIVATE external/imgui/backends
 )
 
 target_link_libraries(${PROJECT_NAME}
     glfw
     glad
+    imgui
 )
